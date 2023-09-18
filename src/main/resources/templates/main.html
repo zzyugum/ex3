@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<div class="fruits">
+    <p> Apple</p>
+    <p>Banana</p>
+    <p>Orange</p>
+</div>
+<script>
+    const fruits = document.querySelectorAll(".fruits p");
+    const fruitArray = Array.from(fruits);
+    const fruitNames = fruitArray.map(fruit => fruit.textContent);
+    console.log(fruitNames);
+</script>
 </body>
 </html>
